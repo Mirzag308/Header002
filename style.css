@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+section {
+    padding: 20px;
+    margin-top: 100px; /* Offset for the fixed header */
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url(background01.jpg);
+    /* background-color: #000000; */
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 6%;
+    position: fixed;  /* Fixes the header at the top */
+    top: 0;
+    width: 100%;  /* Ensures it spans the entire width */
+    z-index: 1000; /* Keeps it above other content */
+    background-color: rgba(0, 0, 0, 0.8); /* Slight background to make the text more readable */
+    backdrop-filter: blur(5px);  /* Optional: adds a blur effect behind the header */
+}
+
+img{
+    position:relative;
+    width: 500px;
+    top: 0;
+    left: 0;
+}
+
+nav h2{
+    color: rgb(255, 106, 0);
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 100px;
+    margin-left: 32px;
+
+}
+
+span{
+    color: rgb(126, 247, 247);
+    font-style:initial ;
+}
+
+nav ul {
+    margin-right: 20px;  /* Align the list slightly better */
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 10px;
+    font-family: "Laila";
+    
+}
+
+nav ul li a{
+    color: #fff4f4;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav ul li a:hover{
+    color:rgb(255, 106, 0);
+    transition: .3s;
+} 
+
+
+
+
+
+
+/* ...................//////////////////////////// */
+
+/* From Uiverse.io by Kabak  */
+button {
+    height: 50px;
+    margin: 5px;
+    width: 120px;
+    background: #fd8f34;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Consolas, Courier New, monospace;
+    border: solid #fd8f34 1px;
+    font-size: 16px;
+    color: rgb(209, 209, 209);
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #2e2d2d, #212121);
+    -webkit-box-shadow: -1px -5px 15px #55b2c4, 5px 5px 15px #55b2c4,
+      inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    box-shadow: 
+      inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  }
+  
+  button:hover {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #fd8f34;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  
+  button:active {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #fd8f34;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #fd8f34;
+    color: #d6d6d6;
+    -webkit-transition: 100ms;
+    transition: 100ms;
+  }
+   */
+
+/* ........................////////////////////////////// */
+button{
+    border: none;
+    background:rgb(255, 106, 0); 
+    padding: 8px 30px;
+    border-radius: 20px;
+    color: rgb(16, 16, 16);
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+
+.btn--secondary{
+    padding: 10px 10px;
+    color: antiquewhite ;
+}
+
+button:hover{
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+/* .main_head{
+    padding-left: 10px;
+    margin-top: 100px;
+
+} 
+
+.main_head h2{
+    font-family: "Outfit", sans-serif;
+    font-size: 4.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color:rgb(192, 74, 6);
+}
+
+.main_head h4{
+    font-family: "Outfit", sans-serif;
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.main_head h5{
+    margin-bottom: 31px;
+    height: 100hv;
+    display: flex;
+    align-items: center;
+}
+
+h5{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h5{
+    -webkit-text-stroke: 3px #75dcd7;
+    position: relative;
+}
+h5::before{
+    content: 'FULL STACK WEB DEVELOPER';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color:rgb(11, 118, 189);
+    border-right: 8px solid #92fffa;
+    transition: 1s ease-in-out;
+}
+h5:hover::before{
+    width: 50%;
+    filter: drop-shadow(0 0 15px rgb(101, 173, 173));
+}
+
+
+
+
+.main_head button3{
+    border: none;
+    background:rgb(253, 129, 41); 
+    padding: 10px 30px;
+    border-radius: 6px;
+    color: rgb(16, 16, 16);
+    font-weight: bold;
+    font-size: 25px;
+    transition: .4s;
+}
+
+
+
+.main_head2 {
+    height: 20px; 
+
+}
+
+.main_head2 img {
+    position: absolute;
+    width: 500px;
+    top: 100px;
+    left: 700px;
+}
+
+.main_head2 img[alt="cover_photo"] {
+    animation: rotateImage 10s infinite linear;
+}
+
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(100deg);
+    }
+}
+
+
+
+.main_head2 a img{
+    position: absolute;
+    width: 230px;
+    align-items:end;
+    top: 220px;
+    left: 839px;
+} */
